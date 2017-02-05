@@ -1,21 +1,21 @@
 import { createProjectStore } from './projectStore';
-import { createStore } from 'redux';
+import { init } from 'peppita-core';
 
-jest.mock('redux', () => {
+jest.mock('peppita-core', () => {
   return {
-    createStore: jest.fn(() => 'pseudo store object')
+    init: jest.fn(() => 'pseudo store object')
   }
 })
 
 
 describe('Setup for project store', () => {
   beforeEach(() => {
-    createStore.mockClear();
+    init.mockClear();
   });
 
   it('a new store is created', () => {
     const store = createProjectStore();
-    expect(createStore).toHaveBeenCalledTimes(1);
+    expect(init).toHaveBeenCalledTimes(1);
     expect(store).toBe('pseudo store object');
   });
 });

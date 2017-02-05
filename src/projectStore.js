@@ -1,7 +1,5 @@
-import { createStore } from 'redux';
+import { init } from 'peppita-core';
 
 export function createProjectStore() {
-  return createStore(
-    (state, action) => action
-  )
+  return init();
 }

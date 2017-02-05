@@ -4,9 +4,11 @@ import { Provider } from 'react-redux';
 import App from './App';
 import { createProjectStore } from './projectStore';
 
-
+const projectStore = createProjectStore();
 
 ReactDOM.render(
-  <App />,
+  <Provider store={projectStore}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
