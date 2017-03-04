@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'semantic-ui-react'
 
+import ProjectTypeSelection from '../containers/ProjectTypeSelection';
+
 class ProjectForm extends Component {
   render() {
     return (
@@ -10,8 +12,8 @@ class ProjectForm extends Component {
           <input placeholder='Name' />
         </Form.Field>
         <Form.Field>
-          <label>Last Name</label>
-          <input placeholder='Type' />
+          <label>Type</label>
+          <ProjectTypeSelection/>
         </Form.Field>
         <Button primary>Save Project</Button>
     </Form>

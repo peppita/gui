@@ -14,7 +14,7 @@ class App extends Component {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <ProjectForm></ProjectForm>
+          <ProjectForm/>
         </Grid.Row>
       </Grid>
     );
