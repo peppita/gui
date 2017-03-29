@@ -3,7 +3,7 @@ import { Route } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Header, Icon, Menu, Sidebar } from 'semantic-ui-react';
 
-import ProjectForm from './components/ProjectForm';
+import CreateProject from './containers/CreateProject';
 
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
-              <Route path="/create-project" component={ProjectForm}/>
+              <Route path="/create-project" component={CreateProject}/>
             </Grid.Row>
           </Grid>
         </Container>
