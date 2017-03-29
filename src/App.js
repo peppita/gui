@@ -17,7 +17,7 @@ class App extends Component {
               <Menu.Item as={Link} to="/" name="List projects">
                 <Icon name="list"/>
               </Menu.Item>
-            <Menu.Item as={Link} to="/test">
+            <Menu.Item as={Link} to="/create-project">
               <Icon name="add square"/>
             </Menu.Item>
           </Sidebar>
@@ -28,7 +28,7 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
-              <Route path="/test" component={ProjectForm}/>
+              <Route path="/create-project" component={ProjectForm}/>
             </Grid.Row>
           </Grid>
         </Container>
