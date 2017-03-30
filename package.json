@@ -4,7 +4,10 @@
   "private": true,
   "license": "Apache-2.0",
   "devDependencies": {
-    "react-scripts": "0.8.5"
+    "enzyme": "^2.8.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-scripts": "0.8.5",
+    "redux-mock-store": "^1.2.2"
   },
   "dependencies": {
     "immutable": "^3.8.1",
